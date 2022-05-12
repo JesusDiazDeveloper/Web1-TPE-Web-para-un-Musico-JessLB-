@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jess La Bestia Web Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+     <!--Fuente icono-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img src="images/jess la bestia 2 transparente este.png" alt="logo jess" id="logoJess">
+    </header>
+    <nav>
+        <!-- barra de navegacion  -->
+        <ul class = "botonera"> 
+            <li class="botonesNav" ><a href="index.html">Home</a></li>
+            <li class="botonesNav"><a href="biografia.html">Biografia</a></li>
+            <li class="botonesNav"><a href="tienda.html">Tienda</a></li>
+        </ul>
+    </nav>
+    <div class="contenidoPrincipal" >
+        <!-- Giras y proximas fechas -->
+        <ul id="listaFechas">
+            <h2 class="worldTour">World Tour 2022</h2>
+            <li class="proximasFechas">4 de Junio - Estadio River Plate</li>
+            <li class="proximasFechas">5 de Junio - Estadio Unico de La Plata</li>
+            <li class="proximasFechas">11 de Junio - SantaMalta Rauch</li>
+            <li class="proximasFechas">12 de Junio - Estadio de Panama</li>
+            <li class="proximasFechas">18 de Junio - Los Angeles </li>
+            <li class="proximasFechas">19 de Junio - Mexico</li>
+            <li class="proximasFechas">25 de Junio - Chicago </li>
+            <li class="proximasFechas">26 de Junio - Miami </li>
+            <li class="proximasFechas">13 de diciembre -  Barcelona</li>
+        </ul>
+        <!-- ultimos videoclip -->
+        <div id="ultimosClips">
+            <iframe id="videoClip" src="https://www.youtube.com/embed/eFnh7Y3rC1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="videoClip" src="https://www.youtube.com/embed/W0rZa72ynZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--formulario de contacto-->
+    <form id="formularioDeContacto">
+        <h2 id="contactoH2">Contacto</h2>
+        <div id="formContainer"> 
+            <label for="nombre">Nombre</label> <input type="text" name="Nombre" class="inputs"  required> 
+            <label for="apellido">Apellido</label> <input type="text" name="Apellido" class="inputs"  required>
+            <label for="email">Email</label> <input type="email" name="email" class="inputs"  required> 
+            <textarea name="comentario" cols="40" rows="10" placeholder="Escribe tu comentario" class="inputs" required></textarea>
+            <div class="captchaContainer" >
+                <div class="wrapper">
+                    <!--cuadrado captcha-->
+                    <div id="captcha"></div>
+                    <!--Boton recargar captcha-->
+                    <button id="botonRecargar"  type="button" >
+                        <!-- Icono del boton refresh, que sacamos de la pagina referenciada en el head. -->
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </button>
+                </div>
+                <!--Cuadro ingrese texto-->
+                <input type="text" id="IngreseTextoDeLaImagen" placeholder="Ingrese texto de la imagen">
+                <!--boton chequear-->
+                <button id="botonChequear" type="button" >Chequear</button>
+                <div id="resultadoDelCaptcha">
+                </div>
+                <input type="submit" value="Enviar" id="btn-enviar" class="oculto">
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div id="logosRedes">
+            <a href="https://www.facebook.com/profile.php?id=100063010192281" title="facebook" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/jesslabestiamusic/" title="instagram" target="_blank"><img src="images/instagram.png" alt="Instagram" ></a>
+            <a href="https://www.youtube.com/channel/UCP1dBJsk0zaWzCg5ziYChdQ" title="youtube" target="_blank"><img src="images/youtube.png" alt="Youtube"></a>
+        </div>
+        <p>Copyright &copy; 2022 Todos los derechos reservados</p>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

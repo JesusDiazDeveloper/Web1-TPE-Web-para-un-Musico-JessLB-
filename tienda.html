@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jess La Bestia Web Site</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Fuente icono-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img src="images/jess la bestia 2 transparente este.png" alt="logo-jess" id="logoJess">
+    </header>
+    <nav>
+        <!-- barra de navegacion  -->  
+        <ul class = "botonera"> 
+            <li class="botonesNav" ><a href="index.html">Home</a></li>
+            <li class="botonesNav"><a href="biografia.html">Biografia</a></li>
+            <li class="botonesNav"><a href="tienda.html">Tienda</a></li>
+        </ul>
+    </nav>
+    <div class="contenidoPrincipaltienda">
+        <h2 class="tiendaOficial">Tienda Oficial Jess La Bestia | MERCHANDISING OFICIAL </h2>
+        <table class="tablaDePrecios">
+            <thead>
+                <th>Tipo</th>
+                <th>Imagen </th>
+                <th>Precio</th>
+            </thead>
+            <tr>
+               <td>Remera Roja con logo</td>
+               <td> <img src="images/remeraRoja.jpg" alt="Remera Roja con logo"></td>
+               <td class="precio">3000$</td>
+           </tr>
+           <tr>
+            <td>Remera Negra con logo</td>
+            <td><img src="images/remeraNegra.jpg" alt="Remera Negra con logo"></td>
+            <td class="precio">3000$</td>
+            </tr>
+            <tr>
+                <td>Remera Azul con logo</td>
+                <td> <img src="images/remeraAzul.jpg" alt="Remera Azul con logo"></td>
+                <td class="precio">3000$</td>
+            </tr>
+            <tr>
+                <td>Gorra Negra con logo</td>
+                <td><img src="images/gorraNegra.jpg" alt="Gorra Negra con logo"></td>
+                <td class="precio">2000$</td>
+            </tr>
+            <tr>
+                <td>Gorra Roja con logo</td>
+                <td><img src="images/gorraRoja.jpg" alt="Gorra Roja con logo"></td>
+                <td class="precio">2000$</td>
+            </tr>
+            <tr>
+                <td>Gorra Azul con logo</td>
+                <td><img src="images/gorraAzul.jpg" alt="Gorra Azul con logo"></td>
+                <td class="precio">2000$</td>
+            </tr>
+        </table>
+    </div>
+    <!--formulario de contacto-->
+    <form id="formularioDeContacto">
+        <h2 id="contactoH2">Contacto</h2>
+        <div id="formContainer"> 
+            <label for="nombre">Nombre</label> <input type="text" name="Nombre" class="inputs"  required> 
+            <label for="apellido">Apellido</label> <input type="text" name="Apellido" class="inputs"  required>
+            <label for="email">Email</label> <input type="email" name="email" class="inputs"  required> 
+            <textarea name="comentario" cols="40" rows="10" placeholder="Escribe tu comentario" class="inputs" required></textarea>
+            <div class="captchaContainer" >
+                <div class="wrapper">
+                    <!--cuadrado captcha-->
+                    <div id="captcha"></div>
+                    <!--Boton recargar captcha-->
+                    <button id="botonRecargar"  type="button" >
+                        <!-- Icono del boton refresh, que sacamos de la pagina referenciada en el head. -->
+                        <i class="fa-solid fa-arrow-rotate-right"></i>
+                    </button>
+                </div>
+                <!--Cuadro ingrese texto-->
+                <input type="text" id="IngreseTextoDeLaImagen" placeholder="Ingrese texto de la imagen">
+                <!--boton chequear-->
+                <button id="botonChequear" type="button" >Chequear</button>
+                <div id="resultadoDelCaptcha">   </div>
+                <input type="submit" value="Enviar" id="btn-enviar" class="oculto">
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div id="logosRedes">
+            <a href="https://www.facebook.com/profile.php?id=100063010192281" title="facebook" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/jesslabestiamusic/" title="instagram" target="_blank"><img src="images/instagram.png" alt="Instagram" ></a>
+            <a href="https://www.youtube.com/channel/UCP1dBJsk0zaWzCg5ziYChdQ" title="youtube" target="_blank"><img src="images/youtube.png" alt="Youtube"></a>
+        </div>
+        <p>Copyright &copy; 2022 Todos los derechos reservados</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
